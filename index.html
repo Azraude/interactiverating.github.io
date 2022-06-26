@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component | Melvin Bruhat</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-logo">
+                    <img src="images/icon-star.svg" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>How did we do?</h1>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <form class="myForm" >
+                    <input type="checkbox" name="rating1" id="rating1" value='1'>
+                    <label for="rating1">1</label>
+                    <input type="checkbox" name="rating1" id="rating2" value='2'>
+                    <label for="rating2">2</label>
+                    <input type="checkbox" name="rating1" id="rating3" value='3'>
+                    <label for="rating3">3</label>
+                    <input type="checkbox" name="rating1" id="rating4" value='4'>
+                    <label for="rating4">4</label>
+                    <input type="checkbox" name="rating1" id="rating5" value='5'>
+                    <label for="rating5">5</label>
+                    
+                    <button type="submit">SUBMIT</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="card-thanks hidden">
+            <div class="card-header-thanks">
+                <img src="images/illustration-thank-you.svg" alt="">
+            </div>
+            <div class="card-body-thanks">
+                <p class="ratingselected"></p>
+                <h1>Thank you!</h1>
+                <div class="appreciate">
+                <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+                    don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
