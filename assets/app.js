@@ -6,12 +6,6 @@ $('input[type="checkbox"]').on('change', function() {
  let cardform = document.querySelector(".card");
  let cardthanks= document.querySelector(".card-thanks");
 
-window.addEventListener('load',function(){
-    console.log(cardform);
-    console.log(cardthanks);
- })
-
-
  form.addEventListener('submit', function(e){
     e.preventDefault();
     const checkbox = "input[name=rating1]:checked";
